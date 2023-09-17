@@ -1,14 +1,13 @@
 <template>
-  <ThemeSwitch />
+  <TestComponent />
 </template>
 
 <script>
-import ThemeSwitch from './components/ThemeSwitch.vue';
-
+import TestComponent from './components/TestComponent.vue'
 export default {
   name: 'App',
   components: {
-    ThemeSwitch,
+    TestComponent,
   }
 }
 </script>
