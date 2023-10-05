@@ -1,7 +1,7 @@
 <template>
     <div>
 
-      <button @click="toggleSort()">
+      <button @click="toggleSort()" class="btn">
         {{ sortText }}
       </button>
       <input type="text" v-model="searched">
@@ -42,6 +42,11 @@
                 { name: 'cheese cakse', price: 3.9 },
                 { name: 'shake', price: 1.5 },
                 { name: 'smoothie', price: 2.5 },
+                { name: 'pouding', price: 2.9 },
+                { name: 'panakouta', price: 2.1 },
+                { name: 'ice tea', price: 0.9 },
+                { name: 'ice coffee', price: 1.1 },
+                { name: 'waffles', price: 4.5 },
             ],
             
             isSorted: false,
