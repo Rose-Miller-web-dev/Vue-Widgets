@@ -1,14 +1,15 @@
 <template>
-  <TestComponent />
+    <TanstackTable />
 </template>
 
 <script>
-import TestComponent from './components/TestComponent.vue';
-
+import TanstackTable from './components/TanstackTable.vue';
+// import PaginatedList from './components/PaginatedList.vue';
 export default {
   name: 'App',
   components: {
-    TestComponent,
+    TanstackTable,
+    //PaginatedList
   }
 }
 </script>
