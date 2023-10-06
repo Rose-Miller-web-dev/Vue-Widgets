@@ -1,12 +1,14 @@
 <template>
-    <div>
+    <div class="container pt-5">
 
-      <button @click="toggleSort()" class="btn">
-        {{ sortText }}
-      </button>
-      <input type="text" v-model="searched">
-
-      <table class="table table-border table-striped">
+      <div class="top-sec d-flex">
+        <button @click="toggleSort()" class="btn btn-info m-2 py-2 px-5">
+          {{ sortText }}
+        </button>
+        <input placeholder="search" class="input-group m-2 p-3" type="text" v-model="searched">
+      </div>
+      
+      <table class="table table-border table-striped m-2 p-3">
         <thead>
           <tr>
             <th>name</th>
@@ -21,11 +23,11 @@
         </tbody>
       </table>
 
-      <button @click="prevPage">
+      <button class="btn btn-outline-white" @click="prevPage">
         Previous
       </button>
 
-      <button @click="nextPage">
+      <button class="btn btn-outline-white" @click="nextPage">
         Next
       </button>
 
@@ -58,7 +60,7 @@
             size:{
                 type:Number,
                 required:false,
-                default: 2
+                default: 4
             }
         },
 

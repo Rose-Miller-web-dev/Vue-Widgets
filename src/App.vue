@@ -1,14 +1,14 @@
 <template>
-    <TableComponent />
+    <TanstackTable />
 </template>
 
 <script>
-import TableComponent from './components/TableComponent.vue';
+import TanstackTable from './components/TanstackTable.vue';
 
 export default {
   name: 'App',
   components: {
-    TableComponent
+    TanstackTable,
   }
 }
 </script>
